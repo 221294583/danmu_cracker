@@ -1,6 +1,8 @@
 # danmu_cracker
 此为bilibili弹幕查询器
-直接使用请打开main.py
+
+
+直接使用请打开menu.exe
 
 # 各文件功能
 1.getcomment.py负责获取视频信息，然后获取弹幕信息；
