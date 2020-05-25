@@ -1,5 +1,5 @@
 # danmu_cracker
-
+此为bilibili弹幕查询器
 直接使用请打开main.py
 
 # 各文件功能
