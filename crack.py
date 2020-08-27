@@ -33,7 +33,10 @@ def finder(num):
 
 def matcher(num,exceptions):
     for i in range(1000000):
-        if ((ini5_table[i]>>28)==(num>>28))&(((ini5_table[i]>>20)&0xf)==((num>>20)&0xf))&(((ini5_table[i]>>12)&0xf)==((num>>12)&0xf))&(((ini5_table[i]>>4)&0xf)==((num>>4)&0xf)):
+        a=[(ini5_table[i]>>28)&0xf,(ini5_table[i]>>20)&0xf,(ini5_table[i]>>12)&0xf,(ini5_table[i]>>4)&0xf]
+        b=[(num>>28)&0xf,(num>>20)&0xf,(num>>12)&0xf,(num>>4)&0xf]
+        if a==b:
+        #if ((ini5_table[i]>>28)==(num>>28))&(((ini5_table[i]>>20)&0xf)==((num>>20)&0xf))&(((ini5_table[i]>>12)&0xf)==((num>>12)&0xf))&(((ini5_table[i]>>4)&0xf)==((num>>4)&0xf)):
             if ini5_table[i] not in exceptions:
                 return ini5_table[i],str(i)
 
